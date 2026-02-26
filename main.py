@@ -1,15 +1,13 @@
 import asyncio
-import threading
-import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
 async def main():
-    loop = asyncio.get_running_loop()
+    from func.state import db_init
     from func.bot import run_bot
+    db_init()
     await run_bot()
-
 
 if name == "main":
     asyncio.run(main())
