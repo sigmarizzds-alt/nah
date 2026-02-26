@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from func.state import (
     sessions, lock, session_snapshot,
     new_session, add_log, detect_tenant, short as mk_short,
-    db_init, db_save_token, db_delete_token,
+    db_save_token, db_delete_token,
     set_log_channel,
 )
 from func.afk import start_afk_session, stop_afk_session, load_all_tokens
@@ -174,11 +174,6 @@ async def cmd_restart(interaction: discord.Interaction, tail: str):
     await interaction.followup.send(embed=em, ephemeral=True)
 
 
-async def main():
-    db_init()
+async def run_bot():
     async with bot:
         await bot.start(DISCORD_TOKEN)
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
