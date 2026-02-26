@@ -1,8 +1,0 @@
-{
-    "token": "Bearer 518375c3-c73e-4d0e-a18d-40d5337cf47e.bbbdd11c15002e33be9acfcbde2c36c2",
-    "tenant_id": "9c1566ce-2e6c-4141-b12e-f93d01cabd5b",
-    "discord_webhook": "https://ptb.discord.com/api/webhooks/1433098904756293714/qNRrkGsTflmXhXFpqw_07Bb9MCCcvbIC9YCdNLuYmUGQIHukBXE0DMgUFHNu-2KHVeuO",
-    "heartbeat_interval": 30,
-    "stats_interval": 60,
-    "notify_interval_seconds": 10
-}
